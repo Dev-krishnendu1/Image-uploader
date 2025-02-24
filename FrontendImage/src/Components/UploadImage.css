@@ -1,6 +1,25 @@
 .input-container{
-     width: 200px;
+     width: 150px;
      border: 1px solid #ccc;
-     font-size: 35px;
+     font-size: 20px;
      margin-left: 40px;
+     margin-right: 100px;
+}
+.Iheader{
+     color:cornflowerblue;
+}
+.button{
+     padding: 5px;
+     border: 1px solid white;
+     border-radius: 5px;
+     font-size: 19px;
+     color:white;
+     background-color: blue;
+     
+}
+.button:hover{
+     background-color: rgb(82, 82, 156);
+}
+.gallary-box{
+     color: cadetblue;
 }

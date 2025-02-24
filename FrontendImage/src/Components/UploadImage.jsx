@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import "./UploadImage.css"
 const ImageUpload = () => {
   const [image, setImage] = useState(null);
   const [imageList, setImageList] = useState([]);
@@ -33,13 +33,15 @@ const ImageUpload = () => {
 
   return (
     <div>
-      <h2>Upload Image</h2>
-      <input type="file" onChange={handleImageChange} />
-      <button onClick={handleUpload}>Upload</button>
+      <h4 className="Iheader">Uploading Images</h4>
+      <input type="file" className="input-container" onChange={handleImageChange} />
+      <button className="button"onClick={handleUpload}>Upload</button>
 
-      <h2>Image Gallery</h2>
+      <h2 className="gallary-box">Gallery</h2>
       {imageList.map((img, index) => (
-        <img key={index} src={img.imageUrl} alt="Uploaded" style={{ width: "200px", margin: "10px" }} />
+        <img key={index} src={img.imageUrl}
+         alt="Uploaded"
+        style={{ width: "200px", margin: "10px" }} />
       ))}
     </div>
   );
